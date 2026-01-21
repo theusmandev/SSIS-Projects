@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="39"
-  DTS:VersionGUID="{6C036A09-B5B0-48ED-9FCD-9B11F608BACB}">
+  DTS:VersionBuild="41"
+  DTS:VersionGUID="{40585588-AC59-4EDF-B091-33120B5A666B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -338,14 +338,35 @@
                       Language="CSharp"
                       ReadOnlyVariables="System::ErrorDescription,User::FilePath">
                       <ProjectItem
-                        Name="Properties\Settings.settings"
-                        Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                        Name="Properties\AssemblyInfo.cs"
+                        Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_9102be6e9b544b53a7726c24171f49fa")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_9102be6e9b544b53a7726c24171f49fa")]
+[assembly: AssemblyCopyright("Copyright @  2026")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
                       <ProjectItem
                         Name="Properties\Resources.resx"
                         Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -745,35 +766,14 @@ namespace ST_9102be6e9b544b53a7726c24171f49fa.Properties {
     }
 }]]></ProjectItem>
                       <ProjectItem
-                        Name="Properties\AssemblyInfo.cs"
-                        Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_9102be6e9b544b53a7726c24171f49fa")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_9102be6e9b544b53a7726c24171f49fa")]
-[assembly: AssemblyCopyright("Copyright @  2026")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                        Name="Properties\Settings.settings"
+                        Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
                       <ProjectItem
                         Name="Properties\Resources.Designer.cs"
                         Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1772,7 +1772,7 @@ WHERE StudentID = ?</property>
         <NodeLayout
           Size="161.333333333334,42.6666666666667"
           Id="Package\File System Task"
-          TopLeft="104.305550892734,353.795317950461" />
+          TopLeft="101.961800997508,362.519002065203" />
         <NodeLayout
           Size="168,42.6666666666667"
           Id="Package\Foreach Loop Container\Execute SQL Task"
@@ -1838,25 +1838,25 @@ WHERE StudentID = ?</property>
           TopLeft="51.3194421502867,24.7076020678968" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="182.645829854843,326.707602067897">
+          TopLeft="181.473954907231,326.707602067897">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,27.0877158825638"
+              EndConnector="0,35.8113999973063"
               Start="0,0"
-              End="0,19.5877158825638">
+              End="0,28.3113999973063">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.5877158825638" />
+                    End="0,28.3113999973063" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-15.24134765625,4.91934622253191,30.4826953125,9.7490234375"
+              BoundingBox="-15.24134765625,9.28118827990315,30.4826953125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -1985,47 +1985,49 @@ WHERE StudentID = ?</property>
     design-time-name="Package\Foreach Loop Container\Load Student Data.EventHandlers[OnError]">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="294.666666666667,50.6666666666667"
           Id="Package\Foreach Loop Container\Load Student Data.EventHandlers[OnError]\Execute SQL Task"
-          TopLeft="225.999993264675,187.999994397164" />
+          TopLeft="147.999995589256,162.999995142222" />
         <NodeLayout
-          Size="272,93.3333333333334"
+          Size="133.333333333334,42.6666666666667"
           Id="Package\Foreach Loop Container\Load Student Data.EventHandlers[OnError]\Script Task"
-          TopLeft="222.999993354082,287.666661153238" />
+          TopLeft="176.999994724989,253.666662166516" />
         <EdgeLayout
           Id="Package\Foreach Loop Container\Load Student Data.EventHandlers[OnError].PrecedenceConstraints[Constraint]"
-          TopLeft="373.333326598008,238.666661063831">
+          TopLeft="295.333328922589,213.666661808889">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-14.3333332439264,49.000000089407"
+              EndConnector="-51.6666675309338,40.0000003576278"
               Start="0,0"
-              End="-14.3333332439264,41.500000089407">
+              End="-51.6666675309338,32.5000003576278">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.5000000447035" />
+                    End="0,16.0000001788139" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.5000000447035"
-                    Point2="0,24.5000000447035"
-                    Point3="-4,24.5000000447035" />
+                    Point1="0,16.0000001788139"
+                    Point2="0,20.0000001788139"
+                    Point3="-4,20.0000001788139" />
                   <mssgle:LineSegment
-                    End="-10.3333332439264,24.5000000447035" />
+                    End="-47.6666675309338,20.0000001788139" />
                   <mssgle:CubicBezierSegment
-                    Point1="-10.3333332439264,24.5000000447035"
-                    Point2="-14.3333332439264,24.5000000447035"
-                    Point3="-14.3333332439264,28.5000000447035" />
+                    Point1="-47.6666675309338,20.0000001788139"
+                    Point2="-51.6666675309338,20.0000001788139"
+                    Point3="-51.6666675309338,24.0000001788139" />
                   <mssgle:LineSegment
-                    End="-14.3333332439264,41.500000089407" />
+                    End="-51.6666675309338,32.5000003576278" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

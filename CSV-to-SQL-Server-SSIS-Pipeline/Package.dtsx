@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{139DEA70-69E8-464A-BA21-667C8F6202EA}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{B2E0591E-A594-4BDE-9246-E8D784342AD8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -495,27 +495,27 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="241.333333333334,63.3333333333334"
-          Id="Package\Foreach Loop Container\Data Flow Task\Flat File Source"
-          TopLeft="233.999993026257,29.9999991059303" />
-        <NodeLayout
           Size="245.333333333334,51.3333333333334"
           Id="Package\Foreach Loop Container\Data Flow Task\OLE DB Destination"
-          TopLeft="235.999992966652,160.999995201826" />
+          TopLeft="130.999997660517,146.631574306957" />
+        <NodeLayout
+          Size="241.333333333334,63.3333333333334"
+          Id="Package\Foreach Loop Container\Data Flow Task\Flat File Source"
+          TopLeft="133.999997496605,30.6842096247336" />
         <EdgeLayout
           Id="Package\Foreach Loop Container\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="356.666659663121,93.3333324392637">
+          TopLeft="254.166664245228,94.0175429580669">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,67.6666627625626"
+              EndConnector="0,52.61403134889"
               Start="0,0"
-              End="0,60.1666627625626">
+              End="0,45.11403134889">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,60.1666627625626" />
+                    End="0,45.11403134889" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
